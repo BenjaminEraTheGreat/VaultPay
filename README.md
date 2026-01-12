@@ -4,7 +4,7 @@
 
 **Professional escrow service for secure P2P, OTC, and coin swap cryptocurrency transactions. Protecting traders from fraud since 2024.**
 
-[![GitHub Pages](https://img.shields.io/badge/website-live-brightgreen)](https://yourusername.github.io/vaultpay-website/)
+[![GitHub Pages](https://img.shields.io/badge/website-live-brightgreen)](https://BenjaminEraTheGreat.github.io/vaultpay-website/)
 [![License](https://img.shields.io/badge/license-proprietary-red)](LICENSE)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -22,14 +22,14 @@
 
 ## 🌐 Live Demo
 
-**Website:** [https://yourusername.github.io/vaultpay-website](https://yourusername.github.io/vaultpay-website)
+**Website:** [https://yourusername.github.io/vaultpay-website](https://BenjaminEraTheGreat.github.io/vaultpay-website)
 
 **Telegram Bot:** [@Vaultpayofficialbot](https://t.me/Vaultpayofficialbot)
 
 ## 🚀 Getting Started
 
 ### Quick Start
-1. Visit [the website](https://yourusername.github.io/vaultpay-website)
+1. Visit [the website](https://BenjaminEraTheGreat.github.io/vaultpay-website)
 2. Click "Start on Telegram" button
 3. Follow the bot instructions to create a secure escrow trade
 
