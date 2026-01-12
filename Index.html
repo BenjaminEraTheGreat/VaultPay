@@ -108,6 +108,27 @@
             color: #ffffff;
         }
         
+        /* Community Button */
+        .community-btn {
+            background: transparent;
+            color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid #ffffff;
+            transition: all 0.3s;
+            margin-left: 15px;
+        }
+        
+        .community-btn:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+        
         /* Hero Section */
         .hero {
             padding: 100px 0;
@@ -138,6 +159,23 @@
             color: #cccccc; /* Light gray for contrast */
             max-width: 700px;
             margin: 0 auto 40px;
+        }
+        
+        .supported-tokens {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+        
+        .token-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
         
         .cta-buttons {
@@ -184,6 +222,62 @@
         .secondary-btn:hover {
             background: #ffffff;
             color: #000000;
+        }
+        
+        .community-cta {
+            margin-top: 30px;
+        }
+        
+        .community-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.3s;
+        }
+        
+        .community-link:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+        
+        /* Trusted Section */
+        .trusted-section {
+            padding: 60px 0;
+            background: rgba(255, 255, 255, 0.03);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .trusted-stats {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .trusted-icon {
+            font-size: 3rem;
+            color: #ffffff;
+        }
+        
+        .trusted-text {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+        
+        .trusted-subtext {
+            font-size: 1rem;
+            color: #cccccc;
+            margin-top: 10px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         /* Features */
@@ -287,6 +381,57 @@
             color: #cccccc; /* Light gray */
         }
         
+        /* Fees Section */
+        .fees-section {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.02);
+            text-align: center;
+        }
+        
+        .fees-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .fees-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .fee-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .fee-percentage {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        
+        .fee-type {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        
+        .fee-description {
+            color: #cccccc;
+            font-size: 1rem;
+        }
+        
+        .fee-note {
+            color: #cccccc;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            font-style: italic;
+        }
+        
         /* FAQ */
         .faq {
             padding: 100px 0;
@@ -327,6 +472,43 @@
         .faq-item.active .faq-answer {
             padding: 0 30px 25px 30px;
             max-height: 500px;
+        }
+        
+        /* Community Section */
+        .community-section {
+            padding: 80px 0;
+            background: rgba(255, 255, 255, 0.03);
+            text-align: center;
+        }
+        
+        .community-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 50px 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .community-icon {
+            font-size: 3rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        
+        .community-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+        
+        .community-box p {
+            color: #cccccc;
+            margin-bottom: 25px;
+        }
+        
+        .community-box .primary-btn {
+            margin-top: 10px;
         }
         
         /* Footer */
@@ -409,6 +591,28 @@
             .logo-text {
                 font-size: 28px;
             }
+            
+            .trusted-text {
+                font-size: 1.5rem;
+            }
+            
+            .trusted-stats {
+                gap: 20px;
+            }
+            
+            .supported-tokens {
+                gap: 10px;
+            }
+            
+            .token-badge {
+                padding: 8px 16px;
+                font-size: 0.9rem;
+            }
+            
+            .community-btn {
+                margin-left: 0;
+                margin-top: 10px;
+            }
         }
     </style>
 </head>
@@ -427,13 +631,20 @@
                 <div class="nav-links">
                     <a href="#features">Features</a>
                     <a href="#how-it-works">How It Works</a>
+                    <a href="#fees">Fees</a>
                     <a href="#faq">FAQ</a>
                 </div>
                 
-                <a href="https://t.me/Vaultpayofficialbot" class="telegram-btn" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    Start Trading
-                </a>
+                <div style="display: flex; align-items: center;">
+                    <a href="https://t.me/Vaultpayofficialbot" class="telegram-btn" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        Start Trading
+                    </a>
+                    <a href="https://t.me/vaultpayofficialescrowgroup" class="community-btn" target="_blank">
+                        <i class="fas fa-users"></i>
+                        Community
+                    </a>
+                </div>
             </div>
         </div>
     </header>
@@ -445,6 +656,14 @@
             <h1>Secure Cryptocurrency Escrow Services</h1>
             <p>Trade Bitcoin, Ethereum, USDT and other cryptocurrencies safely with our trusted escrow protection. P2P, OTC, and Coin Swaps all secured by VaultPay.</p>
             
+            <div class="supported-tokens">
+                <div class="token-badge">Bitcoin (BTC)</div>
+                <div class="token-badge">Monero (XMR)</div>
+                <div class="token-badge">Ethereum (ETH)</div>
+                <div class="token-badge">USDT (TRC-20)</div>
+                <div class="token-badge">Solana (SOL)</div>
+            </div>
+            
             <div class="cta-buttons">
                 <a href="https://t.me/Vaultpayofficialbot" class="primary-btn" target="_blank">
                     <i class="fab fa-telegram"></i>
@@ -454,6 +673,28 @@
                     <i class="fas fa-play-circle"></i>
                     How It Works
                 </a>
+            </div>
+            
+            <div class="community-cta">
+                <a href="https://t.me/vaultpayofficialescrowgroup" class="community-link" target="_blank">
+                    <i class="fas fa-users"></i>
+                    Join our public community group for buyers & sellers
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Section -->
+    <section class="trusted-section">
+        <div class="container">
+            <div class="trusted-stats">
+                <div class="trusted-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div>
+                    <div class="trusted-text">Trusted by 1000+ Traders Worldwide</div>
+                    <div class="trusted-subtext">Join our global community of cryptocurrency traders who trust VaultPay for secure, reliable escrow services.</div>
+                </div>
             </div>
         </div>
     </section>
@@ -524,6 +765,50 @@
         </div>
     </section>
 
+    <!-- Fees Section -->
+    <section class="fees-section" id="fees">
+        <div class="container">
+            <h2 class="section-title">Transparent Fee Structure</h2>
+            
+            <div class="fees-container">
+                <div class="fees-grid">
+                    <div class="fee-card">
+                        <div class="fee-percentage">1%</div>
+                        <div class="fee-type">P2P & OTC Trading</div>
+                        <div class="fee-description">Single 1% service fee for peer-to-peer and over-the-counter transactions</div>
+                    </div>
+                    
+                    <div class="fee-card">
+                        <div class="fee-percentage">0.5% × 2</div>
+                        <div class="fee-type">Coin Swaps</div>
+                        <div class="fee-description">0.5% per side (1% total) for direct cryptocurrency exchanges</div>
+                    </div>
+                </div>
+                
+                <div class="fee-note">
+                    <p><strong>Note:</strong> Above fees are for escrow service only. Network transaction fees and processing fees are separate and paid directly to the blockchain network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section class="community-section" id="community">
+        <div class="container">
+            <div class="community-box">
+                <div class="community-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Join Our Trading Community</h3>
+                <p>Connect with other cryptocurrency traders, buyers, and sellers in our public Telegram group. Get support, find trading partners, and stay updated with the latest news.</p>
+                <a href="https://t.me/vaultpayofficialescrowgroup" class="primary-btn" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                    Join Public Group
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq" id="faq">
         <div class="container">
@@ -532,11 +817,11 @@
             <div class="faq-grid">
                 <div class="faq-item">
                     <div class="faq-question">
-                        What is escrow?
+                        What cryptocurrencies do you support?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Escrow is a secure payment method where funds are held by a trusted third party until both trading parties fulfill their obligations. This protects buyers and sellers from fraud.
+                        We currently support these selected tokens: Bitcoin (BTC), Monero (XMR), Ethereum (ETH), USDT (TRC-20), and Solana (SOL). We focus on providing the most secure escrow services for these popular cryptocurrencies.
                     </div>
                 </div>
                 
@@ -552,21 +837,11 @@
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        What cryptocurrencies do you support?
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <div class="faq-answer">
-                        We support Bitcoin (BTC), Ethereum (ETH), USDT (TRC20), Solana (SOL), Monero (XMR), and many other popular cryptocurrencies for escrow services.
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
                         What are your fees?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        We charge a 1% service fee for P2P/OTC transactions and 0.5% per side (1% total) for coin swaps. This ensures we can provide secure, reliable escrow services.
+                        We charge a 1% service fee for P2P/OTC transactions and 0.5% per side (1% total) for coin swaps. These fees cover our escrow service only. Network transaction fees and processing fees are separate and paid directly to the blockchain network.
                     </div>
                 </div>
                 
@@ -577,6 +852,16 @@
                     </div>
                     <div class="faq-answer">
                         We use secure group technology, transaction verification, and admin oversight for every trade. Funds are protected until both parties are satisfied with the transaction.
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Can I join your community group?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We have a public Telegram group for buyers and sellers to connect. Join at <a href="https://t.me/vaultpayofficialescrowgroup" style="color: #ffffff; text-decoration: underline;">t.me/vaultpayofficialescrowgroup</a> to find trading partners and get community support.
                     </div>
                 </div>
             </div>
@@ -602,20 +887,22 @@
                 <div class="footer-links">
                     <h4>Resources</h4>
                     <a href="#how-it-works">How It Works</a>
+                    <a href="#fees">Fee Structure</a>
                     <a href="#faq">FAQ</a>
                     <a href="https://t.me/Vaultpayofficialbot" target="_blank">Telegram Bot</a>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Contact</h4>
-                    <a href="https://t.me/Vaultpayofficialbot" target="_blank">Telegram Support</a>
-                    <a href="#faq">Help Center</a>
+                    <h4>Community</h4>
+                    <a href="https://t.me/vaultpayofficialescrowgroup" target="_blank">Public Group</a>
+                    <a href="https://t.me/Vaultpayofficialbot" target="_blank">Support Bot</a>
+                    <a href="#community">Join Community</a>
                 </div>
             </div>
             
             <div class="copyright">
                 <p>&copy; 2024 VaultPay Escrow Services. All rights reserved.</p>
-                <p style="margin-top: 10px; font-size: 0.9rem;">Secure • Fast • Trusted</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Secure • Fast • Trusted • Transparent</p>
             </div>
         </div>
     </footer>
