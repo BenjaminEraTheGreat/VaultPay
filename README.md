@@ -22,7 +22,7 @@
 
 ## 🌐 Live Demo
 
-**Website:** [https://yourusername.github.io/vaultpay-website](https://BenjaminEraTheGreat.github.io/vaultpay-website)
+**Website:** [https://BenjaminEraTheGreat.github.io/vaultpay-website](https://BenjaminEraTheGreat.github.io/vaultpay-website)
 
 **Telegram Bot:** [@Vaultpayofficialbot](https://t.me/Vaultpayofficialbot)
 
