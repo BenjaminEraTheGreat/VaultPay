@@ -108,27 +108,6 @@
             color: #ffffff;
         }
         
-        /* Community Button */
-        .community-btn {
-            background: transparent;
-            color: #ffffff;
-            padding: 10px 24px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border: 2px solid #ffffff;
-            transition: all 0.3s;
-            margin-left: 15px;
-        }
-        
-        .community-btn:hover {
-            background: #ffffff;
-            color: #000000;
-        }
-        
         /* Hero Section */
         .hero {
             padding: 100px 0;
@@ -224,60 +203,94 @@
             color: #000000;
         }
         
-        .community-cta {
-            margin-top: 30px;
-        }
-        
-        .community-link {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            transition: opacity 0.3s;
-        }
-        
-        .community-link:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
-        
-        /* Trusted Section */
-        .trusted-section {
-            padding: 60px 0;
+        /* Trust Review Section */
+        .trust-review-section {
+            padding: 80px 0;
             background: rgba(255, 255, 255, 0.03);
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
-        .trusted-stats {
+        .trust-stats {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 40px;
             flex-wrap: wrap;
+            margin-bottom: 50px;
         }
         
-        .trusted-icon {
+        .trust-icon {
             font-size: 3rem;
             color: #ffffff;
         }
         
-        .trusted-text {
+        .trust-text {
             font-size: 2rem;
             font-weight: 700;
             color: #ffffff;
         }
         
-        .trusted-subtext {
-            font-size: 1rem;
-            color: #cccccc;
-            margin-top: 10px;
+        .review-container {
             max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 auto;
+        }
+        
+        .review-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .reviewer {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .reviewer-info h4 {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        
+        .reviewer-info p {
+            color: #cccccc;
+            font-size: 0.9rem;
+        }
+        
+        .review-stars {
+            color: #FFD700;
+            font-size: 1.2rem;
+        }
+        
+        .review-content {
+            color: #cccccc;
+            line-height: 1.6;
+            font-size: 1rem;
         }
         
         /* Features */
@@ -474,43 +487,6 @@
             max-height: 500px;
         }
         
-        /* Community Section */
-        .community-section {
-            padding: 80px 0;
-            background: rgba(255, 255, 255, 0.03);
-            text-align: center;
-        }
-        
-        .community-box {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 50px 30px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .community-icon {
-            font-size: 3rem;
-            color: #ffffff;
-            margin-bottom: 20px;
-        }
-        
-        .community-box h3 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #ffffff;
-        }
-        
-        .community-box p {
-            color: #cccccc;
-            margin-bottom: 25px;
-        }
-        
-        .community-box .primary-btn {
-            margin-top: 10px;
-        }
-        
         /* Footer */
         footer {
             background: rgba(255, 255, 255, 0.03);
@@ -592,11 +568,11 @@
                 font-size: 28px;
             }
             
-            .trusted-text {
+            .trust-text {
                 font-size: 1.5rem;
             }
             
-            .trusted-stats {
+            .trust-stats {
                 gap: 20px;
             }
             
@@ -609,9 +585,9 @@
                 font-size: 0.9rem;
             }
             
-            .community-btn {
-                margin-left: 0;
-                margin-top: 10px;
+            .review-header {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
     </style>
@@ -639,10 +615,6 @@
                     <a href="https://t.me/Vaultpayofficialbot" class="telegram-btn" target="_blank">
                         <i class="fab fa-telegram"></i>
                         Start Trading
-                    </a>
-                    <a href="https://t.me/vaultpayofficialescrowgroup" class="community-btn" target="_blank">
-                        <i class="fas fa-users"></i>
-                        Community
                     </a>
                 </div>
             </div>
@@ -674,26 +646,92 @@
                     How It Works
                 </a>
             </div>
-            
-            <div class="community-cta">
-                <a href="https://t.me/vaultpayofficialescrowgroup" class="community-link" target="_blank">
-                    <i class="fas fa-users"></i>
-                    Join our public community group for buyers & sellers
-                </a>
-            </div>
         </div>
     </section>
 
-    <!-- Trusted Section -->
-    <section class="trusted-section">
+    <!-- Trust Review Section -->
+    <section class="trust-review-section">
         <div class="container">
-            <div class="trusted-stats">
-                <div class="trusted-icon">
+            <div class="trust-stats">
+                <div class="trust-icon">
                     <i class="fas fa-globe"></i>
                 </div>
                 <div>
-                    <div class="trusted-text">Trusted by 1000+ Traders Worldwide</div>
-                    <div class="trusted-subtext">Join our global community of cryptocurrency traders who trust VaultPay for secure, reliable escrow services.</div>
+                    <div class="trust-text">Trusted by 1000+ Traders Worldwide</div>
+                </div>
+            </div>
+            
+            <div class="review-container">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Alex C.</h4>
+                                <p>Cryptocurrency Trader</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        "VaultPay made my first large OTC trade completely stress-free. The escrow process was smooth, and funds were released immediately when both parties confirmed. Highly recommended for secure crypto trading!"
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>Sarah M.</h4>
+                                <p>P2P Seller</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        "As someone who regularly trades crypto P2P, VaultPay's escrow service is a game-changer. The 1% fee is worth every penny for the peace of mind. The Telegram bot is intuitive and the support team is responsive."
+                    </div>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer">
+                            <div class="reviewer-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="reviewer-info">
+                                <h4>James R.</h4>
+                                <p>Coin Swap User</p>
+                            </div>
+                        </div>
+                        <div class="review-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        "Swapped BTC for ETH using VaultPay's coin swap service. The process was secure and transparent. The 0.5% fee per side is reasonable for the security provided. Will definitely use again for future swaps."
+                    </div>
                 </div>
             </div>
         </div>
@@ -792,23 +830,6 @@
         </div>
     </section>
 
-    <!-- Community Section -->
-    <section class="community-section" id="community">
-        <div class="container">
-            <div class="community-box">
-                <div class="community-icon">
-                    <i class="fas fa-users"></i>
-                </div>
-                <h3>Join Our Trading Community</h3>
-                <p>Connect with other cryptocurrency traders, buyers, and sellers in our public Telegram group. Get support, find trading partners, and stay updated with the latest news.</p>
-                <a href="https://t.me/vaultpayofficialescrowgroup" class="primary-btn" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    Join Public Group
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- FAQ -->
     <section class="faq" id="faq">
         <div class="container">
@@ -857,11 +878,11 @@
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        Can I join your community group?
+                        What happens if there's a dispute?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        Yes! We have a public Telegram group for buyers and sellers to connect. Join at <a href="https://t.me/vaultpayofficialescrowgroup" style="color: #ffffff; text-decoration: underline;">t.me/vaultpayofficialescrowgroup</a> to find trading partners and get community support.
+                        In case of disputes, our admin team reviews all chat history and transaction evidence within the secure group. We make fair decisions based on the available information to ensure both parties are treated fairly.
                     </div>
                 </div>
             </div>
@@ -893,10 +914,9 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Community</h4>
-                    <a href="https://t.me/vaultpayofficialescrowgroup" target="_blank">Public Group</a>
-                    <a href="https://t.me/Vaultpayofficialbot" target="_blank">Support Bot</a>
-                    <a href="#community">Join Community</a>
+                    <h4>Contact</h4>
+                    <a href="https://t.me/Vaultpayofficialbot" target="_blank">Telegram Support</a>
+                    <a href="#faq">Help Center</a>
                 </div>
             </div>
             
