@@ -15,8 +15,8 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background: #000000; /* Pure black background */
-            color: #ffffff; /* All white text */
+            background: #000000;
+            color: #ffffff;
             line-height: 1.6;
             overflow-x: hidden;
         }
@@ -52,8 +52,8 @@
         }
         
         .logo-img {
-            width: 80px; /* Enlarged logo */
-            height: 80px; /* Enlarged logo */
+            width: 80px;
+            height: 80px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,9 +66,9 @@
         }
         
         .logo-text {
-            font-size: 32px; /* Slightly larger */
+            font-size: 32px;
             font-weight: 800;
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .nav-links {
@@ -77,7 +77,7 @@
         }
         
         .nav-links a {
-            color: #ffffff; /* White */
+            color: #ffffff;
             text-decoration: none;
             font-weight: 500;
             transition: opacity 0.3s;
@@ -88,8 +88,8 @@
         }
         
         .telegram-btn {
-            background: #ffffff; /* White */
-            color: #000000; /* Black */
+            background: #ffffff;
+            color: #000000;
             padding: 12px 28px;
             border-radius: 50px;
             text-decoration: none;
@@ -129,13 +129,13 @@
             font-size: 3.5rem;
             font-weight: 800;
             margin-bottom: 20px;
-            color: #ffffff; /* White */
+            color: #ffffff;
             line-height: 1.2;
         }
         
         .hero p {
             font-size: 1.2rem;
-            color: #cccccc; /* Light gray for contrast */
+            color: #cccccc;
             max-width: 700px;
             margin: 0 auto 40px;
         }
@@ -165,8 +165,8 @@
         }
         
         .primary-btn {
-            background: #ffffff; /* White */
-            color: #000000; /* Black */
+            background: #ffffff;
+            color: #000000;
             padding: 16px 40px;
             border-radius: 50px;
             text-decoration: none;
@@ -188,13 +188,13 @@
         
         .secondary-btn {
             background: transparent;
-            color: #ffffff; /* White */
+            color: #ffffff;
             padding: 16px 40px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1rem;
-            border: 2px solid #ffffff; /* White */
+            border: 2px solid #ffffff;
             transition: all 0.3s;
         }
         
@@ -218,7 +218,7 @@
             align-items: center;
             gap: 40px;
             flex-wrap: wrap;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
         }
         
         .trust-icon {
@@ -233,23 +233,35 @@
         }
         
         .review-container {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+        
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
         }
         
         .review-card {
             background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            padding: 30px;
+            border-radius: 15px;
+            padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            margin-bottom: 30px;
             text-align: left;
+            transition: transform 0.3s;
+        }
+        
+        .review-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(255, 255, 255, 0.3);
         }
         
         .review-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 15px;
             flex-wrap: wrap;
             gap: 10px;
@@ -258,39 +270,50 @@
         .reviewer {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
         }
         
         .reviewer-avatar {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        
+        .reviewer-info {
+            flex: 1;
         }
         
         .reviewer-info h4 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #ffffff;
+            margin-bottom: 3px;
         }
         
-        .reviewer-info p {
+        .reviewer-info .review-service {
+            font-size: 0.85rem;
             color: #cccccc;
-            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3px 10px;
+            border-radius: 20px;
+            display: inline-block;
         }
         
         .review-stars {
             color: #FFD700;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            margin-top: 5px;
         }
         
         .review-content {
             color: #cccccc;
-            line-height: 1.6;
-            font-size: 1rem;
+            line-height: 1.5;
+            font-size: 0.95rem;
         }
         
         /* Features */
@@ -303,7 +326,7 @@
             font-size: 2.5rem;
             font-weight: 800;
             margin-bottom: 60px;
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .features-grid {
@@ -328,24 +351,24 @@
         .feature-icon {
             width: 70px;
             height: 70px;
-            background: #ffffff; /* White */
+            background: #ffffff;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 25px;
             font-size: 30px;
-            color: #000000; /* Black */
+            color: #000000;
         }
         
         .feature-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .feature-card p {
-            color: #cccccc; /* Light gray */
+            color: #cccccc;
         }
         
         /* How It Works */
@@ -373,7 +396,7 @@
         .step-number {
             width: 60px;
             height: 60px;
-            background: #ffffff; /* White */
+            background: #ffffff;
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -381,17 +404,17 @@
             font-size: 24px;
             font-weight: bold;
             margin: 0 auto 25px;
-            color: #000000; /* Black */
+            color: #000000;
         }
         
         .step h3 {
             font-size: 1.3rem;
             margin-bottom: 15px;
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .step p {
-            color: #cccccc; /* Light gray */
+            color: #cccccc;
         }
         
         /* Fees Section */
@@ -471,7 +494,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .faq-answer {
@@ -479,7 +502,7 @@
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s, padding 0.3s;
-            color: #cccccc; /* Light gray */
+            color: #cccccc;
         }
         
         .faq-item.active .faq-answer {
@@ -505,32 +528,32 @@
             font-size: 28px;
             font-weight: 800;
             margin-bottom: 20px;
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .footer-links h4 {
             font-size: 1.2rem;
             margin-bottom: 25px;
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .footer-links a {
             display: block;
-            color: #cccccc; /* Light gray */
+            color: #cccccc;
             text-decoration: none;
             margin-bottom: 12px;
             transition: color 0.3s;
         }
         
         .footer-links a:hover {
-            color: #ffffff; /* White */
+            color: #ffffff;
         }
         
         .copyright {
             text-align: center;
             padding-top: 40px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #cccccc; /* Light gray */
+            color: #cccccc;
         }
         
         /* Responsive */
@@ -585,9 +608,18 @@
                 font-size: 0.9rem;
             }
             
+            .review-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
             .review-header {
                 flex-direction: column;
                 align-items: flex-start;
+            }
+            
+            .section-title {
+                font-size: 2rem;
             }
         }
     </style>
@@ -662,75 +694,255 @@
             </div>
             
             <div class="review-container">
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer">
-                            <div class="reviewer-avatar">
-                                <i class="fas fa-user"></i>
+                <div class="review-grid">
+                    <!-- Review 1 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@Gok****v</h4>
+                                    <span class="review-service">CoinSwap</span>
+                                </div>
                             </div>
-                            <div class="reviewer-info">
-                                <h4>Alex C.</h4>
-                                <p>Cryptocurrency Trader</p>
-                            </div>
-                        </div>
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <div class="review-content">
-                        "VaultPay made my first large OTC trade completely stress-free. The escrow process was smooth, and funds were released immediately when both parties confirmed. Highly recommended for secure crypto trading!"
-                    </div>
-                </div>
-                
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer">
-                            <div class="reviewer-avatar">
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="reviewer-info">
-                                <h4>Sarah M.</h4>
-                                <p>P2P Seller</p>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
                             </div>
                         </div>
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                        <div class="review-content">
+                            "Used this escrow for a BTC to ETH swap last week. Process was straightforward and just followed the bot's steps. Transaction completed in about 15 minutes total. The 0.5% fee was fair for the security. Only gave 4 stars because there was a minor delay when confirming the ETH network fees."
                         </div>
                     </div>
-                    <div class="review-content">
-                        "As someone who regularly trades crypto P2P, VaultPay's escrow service is a game-changer. The 1% fee is worth every penny for the peace of mind. The Telegram bot is intuitive and the support team is responsive."
-                    </div>
-                </div>
-                
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="reviewer">
-                            <div class="reviewer-avatar">
-                                <i class="fas fa-user"></i>
+                    
+                    <!-- Review 2 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@Pos****ey</h4>
+                                    <span class="review-service">P2P Seller</span>
+                                </div>
                             </div>
-                            <div class="reviewer-info">
-                                <h4>James R.</h4>
-                                <p>Coin Swap User</p>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
-                        <div class="review-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                        <div class="review-content">
+                            "I sell USDT regularly and got scammed twice before finding VP from my good friend. The escrow system actually works. My last buyer tried to dispute after receiving, but the admins checked our chat and resolved it fairly within an hour. This service saves me from sleepless nights."
                         </div>
                     </div>
-                    <div class="review-content">
-                        "Swapped BTC for ETH using VaultPay's coin swap service. The process was secure and transparent. The 0.5% fee per side is reasonable for the security provided. Will definitely use again for future swaps."
+                    
+                    <!-- Review 3 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@Ern****xx</h4>
+                                    <span class="review-service">P2P Buyer</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "Bought 2.5 BTC through P2P. Was nervous as hell sending that much money to a stranger. The escrow held funds until I confirmed receipt in my wallet. Would be 5 stars if they supported more payment methods, but overall solid protection."
+                        </div>
+                    </div>
+                    
+                    <!-- Review 4 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@Nin****n0</h4>
+                                    <span class="review-service">P2P Buyer</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "My first time using this escrow for my first ETH purchase around 0.3 ETH. Was buying from someone with limited feedback. The escrow setup was simple enough through the bot. Transaction went through fine, but had to wait about 10 minutes for the seller to confirm receipt on their end. Better than the usual Telegram P2P gamble though."
+                        </div>
+                    </div>
+                    
+                    <!-- Review 5 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@Dnn****s</h4>
+                                    <span class="review-service">OTC Trader</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "Just completed a $25K USDT to BTC trade through VaultPay. Tried using local exchanges first but their OTC desks had crazy verification requirements. The escrow process was smooth, funds held until both sides confirmed. Took about 20 mins total. For serious amounts, this is way better than trusting someone's 'reputation' in Telegram groups lol."
+                        </div>
+                    </div>
+                    
+                    <!-- Review 6 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@Jam****oV</h4>
+                                    <span class="review-service">CoinSwap</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "Swapped SOL for XMR. Process was smooth but took longer than expected about 25 mins due to network congestion, not the escrow's fault. Interface is clean, fees transparent. Will use again but wish more altcoins can be added."
+                        </div>
+                    </div>
+                    
+                    <!-- Review 7 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@Iam****t</h4>
+                                    <span class="review-service">P2P Trader</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "Works as advertised but had one issue where the bot didn't respond for 10 minutes during a trade. Got anxious but then it caught up. Fees are reasonable. 3 stars for now but will update if my next trades go smoother."
+                        </div>
+                    </div>
+                    
+                    <!-- Review 8 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@sie****D</h4>
+                                    <span class="review-service">P2P Regular</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "Been using for 3 months now with 12 successful trades. What I like is no KYC nonsense, real human support if needed and the fees are lower than most competitors. Found a bug in the bot once, reported it to admin and the team fixed it in a few days. Keep up the goodwork!!"
+                        </div>
+                    </div>
+                    
+                    <!-- Review 9 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@chu****ou</h4>
+                                    <span class="review-service">P2P Trader</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "Quick and reliable. Used for USDT trade, completed in under 5 minutes. Exactly what I needed. Good!"
+                        </div>
+                    </div>
+                    
+                    <!-- Review 10 -->
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-info">
+                                    <h4>@ere****n</h4>
+                                    <span class="review-service">P2P Buyer</span>
+                                </div>
+                            </div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            "Seller try to scamming me. Say sent but did not receive. But this bot hold fund first. Admin check and see and catch he is lying. Got my money back safe. Very good service."
+                        </div>
                     </div>
                 </div>
             </div>
