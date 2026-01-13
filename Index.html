@@ -29,13 +29,14 @@
         
         /* Header */
         header {
-            padding: 25px 0;
+            padding: 20px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             position: sticky;
             top: 0;
             background: rgba(0, 0, 0, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
+            transition: all 0.3s ease;
         }
         
         .header-content {
@@ -47,13 +48,13 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
             text-decoration: none;
         }
         
         .logo-img {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -66,7 +67,7 @@
         }
         
         .logo-text {
-            font-size: 32px;
+            font-size: 28px;
             font-weight: 800;
             color: #ffffff;
         }
@@ -81,6 +82,7 @@
             text-decoration: none;
             font-weight: 500;
             transition: opacity 0.3s;
+            font-size: 1rem;
         }
         
         .nav-links a:hover {
@@ -90,22 +92,22 @@
         .header-buttons {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
         }
         
         .header-btn {
             background: #ffffff;
             color: #000000;
-            padding: 12px 28px;
+            padding: 10px 24px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
             display: flex;
             align-items: center;
-            gap: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            gap: 8px;
+            transition: all 0.3s ease;
             border: 2px solid #ffffff;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             white-space: nowrap;
         }
         
@@ -118,7 +120,7 @@
         
         /* Hero Section */
         .hero {
-            padding: 100px 0;
+            padding: 80px 0;
             text-align: center;
             position: relative;
         }
@@ -134,7 +136,7 @@
         }
         
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 800;
             margin-bottom: 20px;
             color: #ffffff;
@@ -142,7 +144,7 @@
         }
         
         .hero p {
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2vw, 1.2rem);
             color: #cccccc;
             max-width: 700px;
             margin: 0 auto 40px;
@@ -152,22 +154,23 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 10px;
             margin: 30px auto;
             max-width: 800px;
         }
         
         .token-badge {
             background: rgba(255, 255, 255, 0.1);
-            padding: 10px 20px;
+            padding: 8px 16px;
             border-radius: 50px;
             font-weight: 600;
             border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
         }
         
         .cta-buttons {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
         }
@@ -175,15 +178,15 @@
         .hero-btn {
             background: #ffffff;
             color: #000000;
-            padding: 16px 40px;
+            padding: 14px 32px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             display: inline-flex;
             align-items: center;
-            gap: 12px;
-            transition: transform 0.3s, box-shadow 0.3s;
+            gap: 10px;
+            transition: all 0.3s ease;
             border: 2px solid #ffffff;
         }
         
@@ -197,13 +200,13 @@
         .secondary-btn {
             background: transparent;
             color: #ffffff;
-            padding: 16px 40px;
+            padding: 14px 32px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             border: 2px solid #ffffff;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
         
         .secondary-btn:hover {
@@ -213,7 +216,7 @@
         
         /* Trust Review Section */
         .trust-review-section {
-            padding: 80px 0;
+            padding: 60px 0;
             background: rgba(255, 255, 255, 0.03);
             text-align: center;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -224,18 +227,18 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: 30px;
             flex-wrap: wrap;
             margin-bottom: 30px;
         }
         
         .trust-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: #ffffff;
         }
         
         .trust-text {
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 3vw, 2rem);
             font-weight: 700;
             color: #ffffff;
         }
@@ -248,17 +251,17 @@
         .review-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
+            gap: 20px;
             margin-top: 40px;
         }
         
         .review-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 15px;
-            padding: 25px;
+            padding: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: left;
-            transition: transform 0.3s;
+            transition: all 0.3s ease;
         }
         
         .review-card:hover {
@@ -326,29 +329,29 @@
         
         /* Features */
         .features {
-            padding: 100px 0;
+            padding: 80px 0;
         }
         
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: clamp(2rem, 4vw, 2.5rem);
             font-weight: 800;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
             color: #ffffff;
         }
         
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
         
         .feature-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
-            padding: 40px 30px;
+            padding: 30px;
             border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s;
+            transition: all 0.3s ease;
         }
         
         .feature-card:hover {
@@ -357,72 +360,71 @@
         }
         
         .feature-icon {
-            width: 70px;
-            height: 70px;
+            width: 60px;
+            height: 60px;
             background: #ffffff;
-            border-radius: 20px;
+            border-radius: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 25px;
-            font-size: 30px;
+            margin-bottom: 20px;
+            font-size: 24px;
             color: #000000;
         }
         
         .feature-card h3 {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 15px;
             color: #ffffff;
         }
         
         .feature-card p {
             color: #cccccc;
+            font-size: 0.95rem;
         }
         
         /* How It Works */
         .how-it-works {
-            padding: 100px 0;
+            padding: 80px 0;
             background: rgba(255, 255, 255, 0.02);
         }
         
         .steps {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
             max-width: 1000px;
             margin: 0 auto;
         }
         
         .step {
-            flex: 1;
-            min-width: 250px;
             text-align: center;
             position: relative;
         }
         
         .step-number {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background: #ffffff;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 24px;
+            font-size: 20px;
             font-weight: bold;
-            margin: 0 auto 25px;
+            margin: 0 auto 20px;
             color: #000000;
         }
         
         .step h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
             color: #ffffff;
         }
         
         .step p {
             color: #cccccc;
+            font-size: 0.9rem;
         }
         
         /* Fees Section */
@@ -440,45 +442,45 @@
         .fees-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+            gap: 25px;
             margin-top: 40px;
         }
         
         .fee-card {
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
-            padding: 30px;
+            padding: 25px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .fee-percentage {
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: 800;
             color: #ffffff;
             margin-bottom: 10px;
         }
         
         .fee-type {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             color: #ffffff;
             margin-bottom: 15px;
         }
         
         .fee-description {
             color: #cccccc;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
         
         .fee-note {
             color: #cccccc;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             margin-top: 30px;
             font-style: italic;
         }
         
         /* FAQ */
         .faq {
-            padding: 100px 0;
+            padding: 80px 0;
         }
         
         .faq-grid {
@@ -488,15 +490,15 @@
         
         .faq-item {
             background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            margin-bottom: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
             overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .faq-question {
-            padding: 25px 30px;
-            font-size: 1.2rem;
+            padding: 20px;
+            font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
             display: flex;
@@ -506,7 +508,7 @@
         }
         
         .faq-answer {
-            padding: 0 30px;
+            padding: 0 20px;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.3s, padding 0.3s;
@@ -514,34 +516,34 @@
         }
         
         .faq-item.active .faq-answer {
-            padding: 0 30px 25px 30px;
+            padding: 0 20px 20px 20px;
             max-height: 500px;
         }
         
         /* Footer */
         footer {
             background: rgba(255, 255, 255, 0.03);
-            padding: 80px 0 40px;
+            padding: 60px 0 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 50px;
-            margin-bottom: 50px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
         }
         
         .footer-logo {
-            font-size: 28px;
+            font-size: 24px;
             font-weight: 800;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #ffffff;
         }
         
         .footer-links h4 {
-            font-size: 1.2rem;
-            margin-bottom: 25px;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
             color: #ffffff;
         }
         
@@ -549,8 +551,9 @@
             display: block;
             color: #cccccc;
             text-decoration: none;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             transition: color 0.3s;
+            font-size: 0.9rem;
         }
         
         .footer-links a:hover {
@@ -559,87 +562,171 @@
         
         .copyright {
             text-align: center;
-            padding-top: 40px;
+            padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             color: #cccccc;
+            font-size: 0.85rem;
+        }
+        
+        /* Mobile Navigation */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #ffffff;
+            font-size: 1.5rem;
+            cursor: pointer;
         }
         
         /* Responsive */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
+        @media (max-width: 992px) {
             .nav-links {
                 gap: 20px;
             }
             
-            .header-buttons {
+            .header-btn {
+                padding: 8px 20px;
+                font-size: 0.85rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
                 flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .logo {
+                justify-content: center;
                 width: 100%;
-                max-width: 300px;
+            }
+            
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+                width: 100%;
+            }
+            
+            .nav-links a {
+                font-size: 0.95rem;
+            }
+            
+            .header-buttons {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 10px;
             }
             
             .header-btn {
-                width: 100%;
-                justify-content: center;
+                padding: 10px 20px;
+                font-size: 0.9rem;
             }
             
-            .hero h1 {
-                font-size: 2.5rem;
+            .hero {
+                padding: 60px 0;
             }
             
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 15px;
             }
             
             .hero-btn, .secondary-btn {
                 width: 100%;
                 max-width: 300px;
                 justify-content: center;
-            }
-            
-            .logo-img {
-                width: 60px;
-                height: 60px;
-            }
-            
-            .logo-text {
-                font-size: 28px;
-            }
-            
-            .trust-text {
-                font-size: 1.5rem;
-            }
-            
-            .trust-stats {
-                gap: 20px;
+                padding: 12px 24px;
             }
             
             .supported-tokens {
-                gap: 10px;
+                gap: 8px;
             }
             
             .token-badge {
-                padding: 8px 16px;
-                font-size: 0.9rem;
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+            
+            .trust-stats {
+                gap: 15px;
             }
             
             .review-grid {
                 grid-template-columns: 1fr;
+                gap: 15px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
             
-            .review-header {
-                flex-direction: column;
-                align-items: flex-start;
+            .steps {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                text-align: center;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header-content {
+                gap: 15px;
+            }
+            
+            .logo-img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .logo-text {
+                font-size: 24px;
+            }
+            
+            .nav-links {
+                gap: 10px;
+            }
+            
+            .nav-links a {
+                font-size: 0.9rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
             }
             
             .section-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
+            
+            .feature-card {
+                padding: 25px;
+            }
+        }
+        
+        /* Smooth transitions */
+        .smooth-transition {
+            transition: all 0.3s ease;
+        }
+        
+        /* Center align improvements */
+        .center-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
     </style>
 </head>
@@ -680,50 +767,50 @@
     <section class="hero">
         <div class="hero-bg"></div>
         <div class="container">
-            <h1>Secure Cryptocurrency Escrow Services</h1>
-            <p>Trade Bitcoin, Ethereum, USDT and other cryptocurrencies safely with our trusted escrow protection. P2P, OTC, and Coin Swaps all secured by VaultPay.</p>
-            
-            <div class="supported-tokens">
-                <div class="token-badge">Bitcoin (BTC)</div>
-                <div class="token-badge">Monero (XMR)</div>
-                <div class="token-badge">Ethereum (ETH)</div>
-                <div class="token-badge">USDT (TRC-20)</div>
-                <div class="token-badge">Solana (SOL)</div>
-            </div>
-            
-            <div class="cta-buttons">
-                <a href="https://t.me/Vaultpayofficialbot" class="hero-btn" target="_blank">
-                    <i class="fab fa-telegram"></i>
-                    Start on Telegram
-                </a>
-                <a href="#how-it-works" class="secondary-btn">
-                    <i class="fas fa-play-circle"></i>
-                    How It Works
-                </a>
-                <a href="https://t.me/VaultPayTradingHub" class="hero-btn" target="_blank">
-                    <i class="fas fa-users"></i>
-                    Join Community
-                </a>
+            <div class="center-content">
+                <h1>Secure Cryptocurrency Escrow Services</h1>
+                <p>Trade Bitcoin, Ethereum, USDT and other cryptocurrencies safely with our trusted escrow protection. P2P, OTC, and Coin Swaps all secured by VaultPay.</p>
+                
+                <div class="supported-tokens">
+                    <div class="token-badge">Bitcoin (BTC)</div>
+                    <div class="token-badge">Monero (XMR)</div>
+                    <div class="token-badge">Ethereum (ETH)</div>
+                    <div class="token-badge">USDT (TRC-20)</div>
+                    <div class="token-badge">Solana (SOL)</div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="https://t.me/Vaultpayofficialbot" class="hero-btn" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        Start on Telegram
+                    </a>
+                    <a href="#how-it-works" class="secondary-btn">
+                        How It Works
+                    </a>
+                    <a href="https://t.me/VaultPayTradingHub" class="hero-btn" target="_blank">
+                        <i class="fas fa-users"></i>
+                        Join Community
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Rest of the code remains exactly the same -->
     <!-- Trust Review Section -->
     <section class="trust-review-section">
         <div class="container">
-            <div class="trust-stats">
-                <div class="trust-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <div>
+            <div class="center-content">
+                <div class="trust-stats">
+                    <div class="trust-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
                     <div class="trust-text">Trusted by 1000+ Traders Worldwide</div>
                 </div>
             </div>
             
             <div class="review-container">
                 <div class="review-grid">
-                    <!-- Review 1 -->
+                    <!-- Reviews remain the same -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -748,7 +835,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 2 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -773,7 +859,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 3 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -798,7 +883,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 4 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -823,7 +907,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 5 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -848,7 +931,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 6 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -873,7 +955,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 7 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -898,7 +979,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 8 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -923,7 +1003,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 9 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -948,7 +1027,6 @@
                         </div>
                     </div>
                     
-                    <!-- Review 10 -->
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer">
@@ -980,7 +1058,9 @@
     <!-- Features -->
     <section class="features" id="features">
         <div class="container">
-            <h2 class="section-title">Our Escrow Services</h2>
+            <div class="center-content">
+                <h2 class="section-title">Our Escrow Services</h2>
+            </div>
             
             <div class="features-grid">
                 <div class="feature-card">
@@ -1013,7 +1093,9 @@
     <!-- How It Works -->
     <section class="how-it-works" id="how-it-works">
         <div class="container">
-            <h2 class="section-title">How VaultPay Works</h2>
+            <div class="center-content">
+                <h2 class="section-title">How VaultPay Works</h2>
+            </div>
             
             <div class="steps">
                 <div class="step">
@@ -1046,7 +1128,9 @@
     <!-- Fees Section -->
     <section class="fees-section" id="fees">
         <div class="container">
-            <h2 class="section-title">Transparent Fee Structure</h2>
+            <div class="center-content">
+                <h2 class="section-title">Transparent Fee Structure</h2>
+            </div>
             
             <div class="fees-container">
                 <div class="fees-grid">
@@ -1073,7 +1157,9 @@
     <!-- FAQ -->
     <section class="faq" id="faq">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="center-content">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
             
             <div class="faq-grid">
                 <div class="faq-item">
@@ -1207,25 +1293,79 @@
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
+                    // Smooth scroll with offset for header
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
                     });
                 }
             });
         });
         
         // Add scroll effect to header
+        let lastScroll = 0;
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
-            if (window.scrollY > 50) {
+            const currentScroll = window.pageYOffset;
+            
+            // Add shadow when scrolled
+            if (currentScroll > 50) {
                 header.style.boxShadow = '0 5px 20px rgba(255, 255, 255, 0.1)';
             } else {
                 header.style.boxShadow = 'none';
             }
+            
+            // Header hide/show on scroll
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
         });
+        
+        // Mobile menu functionality (optional)
+        function initMobileMenu() {
+            const mobileMenuBtn = document.createElement('button');
+            mobileMenuBtn.className = 'mobile-menu-btn';
+            mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            
+            const navLinks = document.querySelector('.nav-links');
+            const headerContent = document.querySelector('.header-content');
+            
+            // Insert mobile menu button
+            headerContent.insertBefore(mobileMenuBtn, navLinks);
+            
+            // Toggle mobile menu
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+            
+            // Check if mobile menu needed
+            function checkMobile() {
+                if (window.innerWidth <= 768) {
+                    mobileMenuBtn.style.display = 'block';
+                    navLinks.style.display = 'none';
+                    navLinks.classList.add('mobile-nav');
+                } else {
+                    mobileMenuBtn.style.display = 'none';
+                    navLinks.style.display = 'flex';
+                    navLinks.classList.remove('show');
+                    navLinks.classList.remove('mobile-nav');
+                }
+            }
+            
+            // Initial check and resize listener
+            checkMobile();
+            window.addEventListener('resize', checkMobile);
+        }
+        
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', initMobileMenu);
     </script>
 </body>
 </html>
-
-
