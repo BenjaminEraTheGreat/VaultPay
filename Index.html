@@ -87,7 +87,13 @@
             opacity: 0.8;
         }
         
-        .telegram-btn {
+        .header-buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .header-btn {
             background: #ffffff;
             color: #000000;
             padding: 12px 28px;
@@ -99,9 +105,11 @@
             gap: 10px;
             transition: transform 0.3s, box-shadow 0.3s;
             border: 2px solid #ffffff;
+            font-size: 0.95rem;
+            white-space: nowrap;
         }
         
-        .telegram-btn:hover {
+        .header-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
             background: #000000;
@@ -164,7 +172,7 @@
             flex-wrap: wrap;
         }
         
-        .primary-btn {
+        .hero-btn {
             background: #ffffff;
             color: #000000;
             padding: 16px 40px;
@@ -179,7 +187,7 @@
             border: 2px solid #ffffff;
         }
         
-        .primary-btn:hover {
+        .hero-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 30px rgba(255, 255, 255, 0.2);
             background: #000000;
@@ -567,6 +575,17 @@
                 gap: 20px;
             }
             
+            .header-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .header-btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
             .hero h1 {
                 font-size: 2.5rem;
             }
@@ -576,7 +595,7 @@
                 align-items: center;
             }
             
-            .primary-btn, .secondary-btn {
+            .hero-btn, .secondary-btn {
                 width: 100%;
                 max-width: 300px;
                 justify-content: center;
@@ -643,9 +662,13 @@
                     <a href="#faq">FAQ</a>
                 </div>
                 
-                <div style="display: flex; align-items: center;">
-                    <a href="https://t.me/Vaultpayofficialbot" class="telegram-btn" target="_blank">
-                        <i class="fab fa-telegram"></i>
+                <div class="header-buttons">
+                    <a href="https://t.me/VaultPayTradingHub" class="header-btn" target="_blank">
+                        <i class="fas fa-users"></i>
+                        Join Community
+                    </a>
+                    <a href="https://t.me/Vaultpayofficialbot" class="header-btn" target="_blank">
+                        <i class="fas fa-rocket"></i>
                         Start Trading
                     </a>
                 </div>
@@ -669,7 +692,7 @@
             </div>
             
             <div class="cta-buttons">
-                <a href="https://t.me/Vaultpayofficialbot" class="primary-btn" target="_blank">
+                <a href="https://t.me/Vaultpayofficialbot" class="hero-btn" target="_blank">
                     <i class="fab fa-telegram"></i>
                     Start on Telegram
                 </a>
@@ -677,10 +700,15 @@
                     <i class="fas fa-play-circle"></i>
                     How It Works
                 </a>
+                <a href="https://t.me/VaultPayTradingHub" class="hero-btn" target="_blank">
+                    <i class="fas fa-users"></i>
+                    Join Community
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- Rest of the code remains exactly the same -->
     <!-- Trust Review Section -->
     <section class="trust-review-section">
         <div class="container">
@@ -1097,6 +1125,16 @@
                         In case of disputes, our admin team reviews all chat history and transaction evidence within the secure group. We make fair decisions based on the available information to ensure both parties are treated fairly.
                     </div>
                 </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Where can I find trading partners?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Join our <a href="https://t.me/VaultPayTradingHub" target="_blank" style="color: #0088cc; text-decoration: underline;">VaultPay Trading Hub</a> Telegram group to connect with other traders, find trading partners, and get community support.
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1126,7 +1164,8 @@
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Contact</h4>
+                    <h4>Community & Contact</h4>
+                    <a href="https://t.me/VaultPayTradingHub" target="_blank">Join Community</a>
                     <a href="https://t.me/Vaultpayofficialbot" target="_blank">Telegram Support</a>
                     <a href="#faq">Help Center</a>
                 </div>
@@ -1135,6 +1174,11 @@
             <div class="copyright">
                 <p>&copy; 2024 VaultPay Escrow Services. All rights reserved.</p>
                 <p style="margin-top: 10px; font-size: 0.9rem;">Secure • Fast • Trusted • Transparent</p>
+                <p style="margin-top: 10px; font-size: 0.85rem;">
+                    <a href="https://t.me/VaultPayTradingHub" target="_blank" style="color: #0088cc; text-decoration: none;">
+                        <i class="fab fa-telegram"></i> Join our Telegram Trading Community
+                    </a>
+                </p>
             </div>
         </div>
     </footer>
